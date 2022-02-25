@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div id="header">
+<h1>Position Property 101</h1>
+<p>This is an infomational about the values that you can set to the position property and how to use them.</p>
+</div>
+<table>
+<thead>
+  <tr>
+    <th id="values">Values</th>
+    <th>Definition</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Inherit</td>
+    <td>Takes the position value of its parent element.</td>
+    <td>
+      <ul>
+        <li>None</li>
+        </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Initial</td>
+    <td>Sets property to its default value--which is static.</td>
+    <td>
+      <ul>
+        <li>Makes elements appear in order top to bottom as its written in the code.</li>
+         <li>Z-index is zero.</li>
+       </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Relative</td>
+    <td>Element moves relative to its static/default position. </td>
+    <td>
+      <ul>
+        <li>Reserves initial space in flow of page.</li>
+        </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Absolute</td>
+    <td>Moves relative to its closest positioned(non-static) ancestor/element container.</td>
+    <td>
+      <ul>
+        <li>If there is none it moves relative to its initial container.</li>
+        <li>Margins do not collapse with othe margins.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Fixed</td>
+    <td>Moves relative to the broswer window/viewport. (always on the screen)</td>
+    <td>
+      <ul>
+        <li>Removed from the content flow.</li>
+      <li>No space is created for this element.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Static</td>
+    <td>Positioned in the order written in the html flow.</td>
+    <td>
+      <ul>
+        <li>Default. Can be used as fallback.</li>
+        <li> Position properties (top, right, bottom, lef, z-index) have no affect.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Sticky</td>
+    <td>Positioned  in normal flow of the html document in a relative position until scrolled passed, then it stick so the screen until returned to its initial position.</td>
+    <td>
+      <ul>
+        <li>Toggles between being relative and fixed.</li>
+        <li>Sticks to nearest element with scrolling behavior. Could inhibit sticky behavior.</li>
+        <li>Internet explorer doesn't support this positioning. And, Safari requires a -webkit-prefix</li>
+        <li>Requires a positioning property to function.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+
+
+</body>
+
+</html>
